@@ -3,3 +3,5 @@
   email = 55771180+albeartoz@users.noreply.github.com
   signingkey = 40ACFFC125D4E2E6
 
+[core]
+	excludesFile = ~/.gitignore

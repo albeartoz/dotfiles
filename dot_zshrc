@@ -1,10 +1,27 @@
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && . "$HOME/.fig/shell/zshrc.pre.zsh"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 eval "$(starship init zsh)"
+
+
+## GitHub
 
 # last non-fixup commit hash
 lnf() {
   echo $(git log --grep "fixup!" --invert-grep -n 1 --format='%H')
 }
+
+# git commit with fixup
+gcfix() {
+  git commit --fixup $(lnf) -m $1
+}
+
+
+export EDITOR=nvim
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && . "$HOME/.fig/shell/zshrc.post.zsh"
