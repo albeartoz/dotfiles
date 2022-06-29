@@ -1,2 +1,6 @@
 # dotfiles
-This uses chezmoi to track changes to dotfiles.
+This uses [chezmoi](https://www.chezmoi.io/) to track changes to dotfiles.
+
+https://starship.rs/  
+https://fig.io/  
+https://zellij.dev/
