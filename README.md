@@ -7,3 +7,8 @@ https://starship.rs/
 https://fig.io/  
 https://zellij.dev/  
 https://helix-editor.com/
+
+Neat packages:
+- fzf
+- exa
+- fish
