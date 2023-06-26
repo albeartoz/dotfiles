@@ -7,6 +7,7 @@ https://starship.rs/
 https://fig.io/  
 https://zellij.dev/  
 https://helix-editor.com/
+https://github.com/Schniz/fnm
 
 Neat packages:
 - fzf
